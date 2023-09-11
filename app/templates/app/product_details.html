@@ -1,0 +1,17 @@
+{% extends 'app/index.html' %}
+{% load static %}
+
+{% block body %}
+<section class="product-details">
+    <img src="{% static 'images/shoes.webp' %}" alt="Product 1" >
+    <h2>PS Shoes</h2>
+    <p>This product is made in japan. you feel very confortable while wearing these shoes they provide extra confort and the pu sole makes it durable</p>
+    <p>Price: $20.00</p>
+    <p> <strong>In stock</strong></p>
+    <input type="number" placeholder="Quantity" style="width: 70px;">
+    <p> Sold by Cocoblu Retail and Fulfilled by My shop.</p>
+    <button><a href="{% url 'cart' %}">Add to Cart</a></button>
+    <button><a href="{% url 'checkout' %}" class="checkout-button">Buy Now</a></button>
+</section>
+
+{% endblock %}

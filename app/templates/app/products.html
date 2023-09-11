@@ -1,0 +1,85 @@
+{% extends 'app/index.html' %}
+{% load static %}
+
+{% block body %}
+
+
+<div>
+    <h1 style="text-align: center;">Our Products</h1>
+    <section class="products">
+        <div class="product">
+            <img src="{% static 'images/instagram-01.jpg' %}" alt="Product 1" >
+            <h2>Product 1</h2>
+            <p>Price: $20.00</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="{% static 'images/instagram-02.jpg' %}" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Price: $25.00</p>
+            <a href="{% url 'productdetails' %}"><button class="add-to-cart">Add to Cart</button></a>
+        </div>
+        <div class="product">
+            <img src="{% static 'images/instagram-03.jpg' %}" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Price: $25.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="{% static 'images/instagram-04.jpg' %}" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Price: $25.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="{% static 'images/instagram-05.jpg' %}" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Price: $25.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="{% static 'images/instagram-06.jpg' %}" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Price: $25.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="{% static 'images/kid-01.jpg' %}" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Price: $25.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="{% static 'images/kid-02.jpg' %}" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Price: $25.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="{% static 'images/kid-03.jpg' %}" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Price: $25.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="{% static 'images/men-01.jpg' %}" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Price: $25.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="{% static 'images/men-02.jpg' %}" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Price: $25.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="{% static 'images/men-03.jpg' %}" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Price: $25.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <!-- Add more products here -->
+    </section>
+</div>
+{% endblock %}

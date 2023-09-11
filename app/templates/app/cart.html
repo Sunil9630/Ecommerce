@@ -1,0 +1,23 @@
+{% extends 'app/index.html' %}
+{% load static %}
+
+{% block body %}
+    <section class="cart">
+        <h1>Your Cart</h1>
+        <ul class="cart-items">
+            <li class="cart-item">
+                <div class="item-details">
+                    <h2>Product 1</h2>
+                    <p>Price: $20.00</p>
+                    <p>Quantity: 2</p>
+                </div>
+                <button class="remove-button">Remove</button>
+            </li>
+            <!-- Add more cart items here -->
+        </ul>
+        <div class="total">
+            <h3>Total: $20.00</h3>
+            <button class="checkout-button">Checkout</button>
+        </div>
+    </section>
+{% endblock %}
